@@ -51,6 +51,7 @@ export const Router = () => {
           </Switch>
         )}
       />
+
       <Route path="*">
         <Page404 />
       </Route>
