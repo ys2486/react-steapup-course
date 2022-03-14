@@ -9,17 +9,6 @@ import { DefaultLayout } from './components/templetes/DefaultLayout';
 import { HeaderOnly } from './components/templetes/HeaderOnly';
 import { Router } from './router/Router';
 
-const user = {
-  name: '須藤',
-  image: 'https://source.unsplash.com/Mv9hjnEUHR4',
-  email: '1235@example.com',
-  phone: '090-1111-2222',
-  company: {
-    name: 'テスト株式会社',
-  },
-  website: 'https://google.com',
-};
-
 function App() {
   return (
     <Router />
