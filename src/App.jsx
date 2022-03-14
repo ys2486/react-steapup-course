@@ -8,10 +8,16 @@ import { UserCard } from './components/organisms/user/UserCard';
 import { DefaultLayout } from './components/templetes/DefaultLayout';
 import { HeaderOnly } from './components/templetes/HeaderOnly';
 import { Router } from './router/Router';
+import { UserProvider } from './providers/UserProvider';
+import { RecoilRoot } from 'recoil';
 
 function App() {
   return (
-    <Router />
+    <RecoilRoot>
+      <UserProvider>
+        <Router />
+      </UserProvider>
+    </RecoilRoot>
     // <BrowserRouter>
     //   <DefaultLayout>
     //     <PrimaryButton>テスト</PrimaryButton>
